@@ -1,0 +1,67 @@
+/* Estilo básico para a página */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1
+{
+    text-align: center;
+    color: black;
+}
+
+/* Centraliza e estiliza o container do formulário */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaçamento entre os elementos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo dos rótulos */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo do botão */
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}

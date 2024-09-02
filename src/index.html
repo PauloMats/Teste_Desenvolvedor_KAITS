@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Definição de metadados básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    
+    <!-- Estilos internos ou links para CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Container do formulário para melhor organização e estilo -->
+        <div class="form-container">
+
+            <!-- Formulário para capturar nome e data de nascimento -->
+            <form>
+
+                <!-- Campo para o nome do usuário -->
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <!-- Campo para a data de nascimento do usuário -->
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+
+                <!-- Botão de envio do formulário -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 Formulário de Cadastro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
