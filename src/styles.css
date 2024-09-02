@@ -1,25 +1,27 @@
 /* Estilo básico para a página */
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
-h1
-{
+h1 {
     text-align: center;
-    color: black;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 /* Centraliza e estiliza o container do formulário */
 .form-container {
-    max-width: 400px;
+    max-width: 400px; /* Limita a largura em telas maiores */
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 /* Espaçamento entre os elementos do formulário */
@@ -32,25 +34,30 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: 1rem;
 }
 
 /* Estilo dos campos de entrada */
 input[type="text"], input[type="date"] {
     width: 100%;
-    padding: 8px;
+    padding: 12px; /* Aumenta o padding para facilitar o uso em telas touch */
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
 /* Estilo do botão */
 button {
-    padding: 10px 15px;
+    width: 100%; /* O botão ocupa toda a largura em telas menores */
+    padding: 15px;
     background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 /* Estilo do botão ao passar o mouse */
@@ -64,4 +71,56 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
     color: #777;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    /* Ajusta o padding para telas menores */
+    body {
+        padding: 10px;
+    }
+    /* Ajusta o tamanho da fonte para telas menores */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* O container se ajusta para ser mais fluido em telas pequenas */
+    .form-container {
+        padding: 15px;
+    }
+
+    /* Aumenta o tamanho da fonte e padding para melhor usabilidade em mobile */
+    input[type="text"], input[type="date"], button {
+        padding: 14px;
+        font-size: 1.2rem;
+    }
+
+    /* Rodapé ajustado para telas menores */
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Ajusta o padding para telas maiores */
+    body {
+        padding: 20px;
+    }
+
+    /* O container se ajusta para ser mais fluido em telas maiores */
+    .form-container {
+        padding: 20px;
+    }
+
+    /* Aumenta o tamanho da fonte e padding para melhor usabilidade em desktop */
+    input[type="text"], input[type="date"], button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* Rodapé ajustado para telas maiores */
+    footer {
+        font-size: 0.9em;
+    }
+    
 }
